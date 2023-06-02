@@ -32,7 +32,7 @@ const Library: FC<LibraryProps> = ({songs}) => {
         //     return subscribeModal.onOpen()
         // }
 
-        // return uploadModal.onOpen()
+        return uploadModal.onOpen()
     }
   return (
     <div className='flex flex-col'>
