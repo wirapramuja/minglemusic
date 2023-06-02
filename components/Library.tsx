@@ -9,14 +9,14 @@ import useUploadModal from '@/hooks/useUploadModal'
 import { Song } from '@/types'
 import MediaItem from './MediaItem'
 import useOnPlay from '@/hooks/useOnPlay'
-import useSubscribeModal from '@/hooks/useSubscribeModal'
+// import useSubscribeModal from '@/hooks/useSubscribeModal'
 
 interface LibraryProps {
   songs: Song[]
 }
 
 const Library: FC<LibraryProps> = ({songs}) => {
-    const subscribeModal = useSubscribeModal()
+    // const subscribeModal = useSubscribeModal()
     const authModal = useAuthModal()
     const onPlay = useOnPlay(songs)
     const uploadModal = useUploadModal()
@@ -28,11 +28,11 @@ const Library: FC<LibraryProps> = ({songs}) => {
 
         // todo check for berlanggganan
         
-        if (!subscription){
-            return subscribeModal.onOpen()
-        }
+        // if (!subscription){
+        //     return subscribeModal.onOpen()
+        // }
 
-        return uploadModal.onOpen()
+        // return uploadModal.onOpen()
     }
   return (
     <div className='flex flex-col'>

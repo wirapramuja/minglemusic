@@ -14,7 +14,7 @@ import './globals.css'
 const font = Figtree({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Spotify Clone',
+  title: 'Mingle Music',
   description: 'Spotify Clone',
 }
 
@@ -34,7 +34,7 @@ export default async function RootLayout({
         <ToasterProvider />
         <SupabaseProvider>
           <UserProvider>
-            <ModalProvider products={products} />
+            <ModalProvider />
             <Sidebar songs={userSongs}>
               {children}
             </Sidebar>
